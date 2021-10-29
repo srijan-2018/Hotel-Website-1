@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css">
+
+
+</head>
+
+<a id="button" class="d-flex align-items-center justify-content-center"><i class="fas fa-chevron-up fa-2x" style="color:white;"></i></a>
+
+<body class="overflow-hidden">
+    
+<!-- header section starts  -->
+	<header class="header over">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="rooms.html">rooms</a>
+      <a href="contact.html">contact</a>
+      <a href="blog.html">blogs</a>
+    </nav>
+
+    <div class="icons d-flex align-items-center d-none-res">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div id="cart-btn"><a href="log-in.html" class="btn_acele btn_black d-none-res">sign up</a></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        
+        <button type="button" class="btn btn-secondary">Register Now</button>
+    </div>
+
+</header>
+<!-- header section ends -->
+<div class="bg-image-bradecam d-flex align-items-center" style="margin-top:90px;">
+  <div class="container-fluid px-5">
+      <div class="row">
+          <div class="col-lg-12">
+             <h2 class="text-white">ROOMS</h2>
+             <div class="d-flex">
+               <a href="#" style="color: white;">home</a> &nbsp; /  &nbsp; 
+               <a href="#" style="color: white;">Rooms</a>
+             </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid my-5 px-5">
+    <div class="row">
+        <div class="col-lg-4 col-12 order-sm-1 order-2">
+          <h3 style="font-size: 28px; font-weight: 600;">Select Filters</h3><br>
+          <h6>Popular Filters :</h6>
+
+          <div>
+            <form action="/action_page.php">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> Free Cancellation, Zero Payment Now (0)</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> Safe and Hygienic Stays (110)</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3"> EMI Deals Available (204)</label><br>
+              <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
+              <label for="vehicle4"> Free Cancellation, Zero Payment Now (0)</label><br>
+              <button type="button" id="toggleBtn" style="background-color: #fff; color: #2852a0;">Show More</button>
+
+              <div id="toggleDiv" style="display: none;">
+                <input type="checkbox" id="vehicle5" name="vehicle5" value="Car">
+              <label for="vehicle5"> Safe and Hygienic Stays (110)</label><br>
+              <input type="checkbox" id="vehicle6" name="vehicle6" value="Boat">
+              <label for="vehicle6"> EMI Deals Available (204)</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Safe and Hygienic Stays (110)</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> EMI Deals Available (204)</label><br>
+                <button type="button" id="toggleBtn2" style="background-color: #fff; color: #2852a0;">Show Less</button>
+              </div>
+            </form>
+          </div><br>
+
+          
+          <h6>Locality</h6>
+          <p style="font-size: 20px;">Other Popular Areas</p>
+          <div>
+            <input type="checkbox" id="one" >
+            <label for="one"> North Goa</label><br>
+            <input type="checkbox" id="two">
+            <label for="two"> South Goa</label><br>
+            <input type="checkbox" id="three">
+            <label for="three"> Calangute</label><br>
+            <input type="checkbox" id="four" >
+            <label for="four"> Anjuna</label><br>
+          </div><br>
+
+          <h6>Star Category</h6>
+          <div>
+            <input type="checkbox" id="one1" >
+            <label for="one1"> Other</label><br>
+            <input type="checkbox" id="two2">
+            <label for="two2"> 5 Star</label><br>
+            <input type="checkbox" id="three3">
+            <label for="three3"> 4 Star</label><br>
+            <input type="checkbox" id="four4" >
+            <label for="four4"> 3 Star</label><br>
+          </div>
+
+          <h6>Host Language</h6>
+          <div>
+            <input type="checkbox" id="Bengali" >
+            <label for="Bengali"> Bengali</label><br>
+            <input type="checkbox" id="Malayalam">
+            <label for="Malayalam"> Malayalam</label><br>
+            <input type="checkbox" id="Russian">
+            <label for="Russian"> Russian</label><br>
+            <input type="checkbox" id="French" >
+            <label for="French"> French</label><br>
+          </div>
+
+        </div>
+        
+
+
+        <div class="col-lg-8 col-12 order-sm-2 order-1 ">
+          <h3 style="font-size: 28px; font-weight: 600;">Recommended for You :</h3>
+          <div class="row bg-color-gray mt-4">
+            <div class="col-lg-3 col-md-3 col-12  d-flex align-items-center">
+              <img src="images/rooms/single.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-4">
+              <h2 style="font-weight: 300;">Single Room</h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+              <div class="d-flex">
+                <div class="bg-icon-yello mr-2">
+                    <i class="fas fa-mug-hot"></i> 
+                </div>
+                <div class="bg-icon-yello">
+                <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12  text-center  d-flex align-items-center justify-content-center">
+              <div>
+              <h4>€89,00</h4>
+              <p>PER NIGHT</p>
+              <div class="text-center">
+                <a href="#" class="btn_acele-2 btn_black-2" style="padding: 15px 20px;">Book Now</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row bg-color-gray mt-4">
+            <div class="col-lg-3 col-md-3 col-12  d-flex align-items-center">
+              <img src="images/rooms/single.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-4">
+              <h2 style="font-weight: 300;">Double Room - With Slider</h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+              <div class="d-flex">
+                <div class="bg-icon-yello mr-2">
+                    <i class="fas fa-mug-hot"></i> 
+                </div>
+                <div class="bg-icon-yello">
+                <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12  text-center  d-flex align-items-center justify-content-center">
+              <div>
+              <h4>€89,00</h4>
+              <p>PER NIGHT</p>
+              <div class="text-center">
+                <a href="#" class="btn_acele-2 btn_black-2" style="padding: 15px 20px;">Book Now</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row bg-color-gray mt-4">
+            <div class="col-lg-3 col-md-3 col-12  d-flex align-items-center">
+              <img src="images/rooms/single.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-4">
+              <h2 style="font-weight: 300;">Delux Room</h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+              <div class="d-flex">
+                <div class="bg-icon-yello mr-2">
+                    <i class="fas fa-mug-hot"></i> 
+                </div>
+                <div class="bg-icon-yello">
+                <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12  text-center  d-flex align-items-center justify-content-center">
+              <div>
+              <h4>€89,00</h4>
+              <p>PER NIGHT</p>
+              <div class="text-center">
+                <a href="#" class="btn_acele-2 btn_black-2" style="padding: 15px 20px;">Book Now</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row bg-color-gray mt-4">
+            <div class="col-lg-3 col-md-3 col-12  d-flex align-items-center">
+              <img src="images/rooms/single.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-4">
+              <h2 style="font-weight: 300;">King Room</h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+              <div class="d-flex">
+                <div class="bg-icon-yello mr-2">
+                    <i class="fas fa-mug-hot"></i> 
+                </div>
+                <div class="bg-icon-yello">
+                <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12  text-center  d-flex align-items-center justify-content-center">
+              <div>
+              <h4>€89,00</h4>
+              <p>PER NIGHT</p>
+              <div class="text-center">
+                <a href="#" class="btn_acele-2 btn_black-2" style="padding: 15px 20px;">Book Now</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row bg-color-gray mt-4">
+            <div class="col-lg-3 col-md-3 col-12  d-flex align-items-center">
+              <img src="images/rooms/single.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-4">
+              <h2 style="font-weight: 300;">Honeymoon Room</h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+              <div class="d-flex">
+                <div class="bg-icon-yello mr-2">
+                    <i class="fas fa-mug-hot"></i> 
+                </div>
+                <div class="bg-icon-yello">
+                <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12  text-center  d-flex align-items-center justify-content-center">
+              <div>
+              <h4>€89,00</h4>
+              <p>PER NIGHT</p>
+              <div class="text-center">
+                <a href="#" class="btn_acele-2 btn_black-2" style="padding: 15px 20px;">Book Now</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>	
+
+<footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">Company</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Get started</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="#">App design</a></li>
+        <li><a href="#">Web design</a></li>
+        <li><a href="#">Logo design</a></li>
+        <li><a href="#">Banner design</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Account</li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">My account</a></li>
+        <li><a href="#">Prefrences</a></li>
+        <li><a href="#">Purchase</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Courses</li>
+        <li><a href="#">HTML & CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Photoshop</a></li>
+      </ul>
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="text" placeholder="Enter your email"></li>
+        <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2021 <a href="#">Logo.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
+	
+<!--hero section-->
+<script>
+	var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  effect:'fade',
+  spaceBetween: 10,
+  speed: 700,
+  parallax: true,
+  thumbs: {
+    swiper: swiper,
+  },
+});
+</script>
+<!--hero section-->
+
+<!--auto type-->
+<script>
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+</script>
+<!--auto type-->
+	
+<script>
+	function sliderPluggin(activeslide = 0) {
+  const slides = document.querySelectorAll('.slide');
+  
+  slides[activeslide].classList.add('active');
+
+  function clearActiveClasses() {
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+    });
+  }
+
+  for (const slide of slides) {
+    slide.addEventListener('click', () => {
+      clearActiveClasses();
+      slide.classList.add('active');
+    });
+  }
+}
+
+sliderPluggin(0);	
+</script>
+
+<script>
+  // const toggleBtn = document.getElementById('toggleBtn')
+  // const toggleDiv = document.getElementById('toggleDiv')
+
+  // const toggleState = 'false';
+
+  // toggleBtn.addEventListener('click', () => {
+  //   toggleState = !toggleState
+
+  //   if(toggleState) {
+  //     toggleDiv.style.display = 'block'
+  //   } else {
+  //     toggleDiv.style.display = 'none'
+  //   }
+  // })
+  $("#toggleBtn").on("click", () => {
+    $("#toggleDiv").css("display", "block")
+    $("#toggleBtn").css("display", "none")
+  })
+  $("#toggleBtn2").on("click", () => {
+    $("#toggleDiv").css("display", "none")
+    $("#toggleBtn").css("display", "block")
+  })
+</script>
+	
+<script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
+	
+</body>
+</html>
