@@ -200,6 +200,9 @@
    .text-size{
 	   font-size: 18px;
    }
+   .text-right-res{
+	   text-align: left !important;
+   }
 }
 
 @media (max-width:375px){
